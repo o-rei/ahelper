@@ -16,4 +16,4 @@ git clone https://github.com/subtletea-research/ahelper.git "$TMP_DIR/ahelper"
 
 cd "$TMP_DIR/ahelper"
 
-cargo install --path .
+make install

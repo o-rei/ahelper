@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-SWAPFILE="/swap/swapfile"
-
 # Cancel execution of script if error encountered
 set -euo pipefail
 
@@ -104,7 +102,7 @@ case "$cmd" in
             echo "unavailable"
             echo "  fix: use a kernel with PSI enabled"
         fi
-        ;;  ### END 
+        ;;  ### END
 
 
     ### SWAP CASE ###
@@ -138,7 +136,7 @@ case "$cmd" in
             fi
         fi
 
-        # 
+        #
         # remove pre-existing /swap dir with /swap/swapfile if exists
         sudo swapoff "$SWAPFILE" 2>/dev/null || true
         sudo rm -rf /swap
@@ -155,7 +153,7 @@ case "$cmd" in
 
         # display newly-available swap
         swapon --show
-        ;;  
+        ;;
         ### END SWAP CASE ###
 
     ### ZRAM CASE ###

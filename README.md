@@ -13,17 +13,29 @@ specification schemes, which becomes easy for experts with practice, but is
 insurmountable for beginners, even with extensive programming experience in data
 science, for example.
 
+
+`ahelper` seeks to ease the learning curve of Arch Linux, one of the most
+minimal kinds of  somewhat by providing distilled
+customization commands to simplify the user experience but maintaining the
+minimalist spirit.
+
 This repository collects scripts, github repositories, build instructions, and
 similar computational artifacts that I have found useful for installing and
 configuring Arch Linux.
 
-`ahelper` seeks to ease the learning curve somewhat by providing distilled
-customization commands to simplify the user experience but maintaining the
-minimalist spirit. I imagine the target audience as those with general
-programming experience, but who are beginners working with operating systems and
-_systems-level_ programming in general.
 
+### Sustainable Inference
 
+`ahelper` is part of the broader [**Sustainable
+Inference**](https://sustainableinference.com) product line. Sustainable
+Inference products provide flexible computational ecosystem focused on:
+
+- prototyping new sustainable technologies with marginalized communities first, so they share in product ownership
+- application engineering to create, for example, flexible translation tools so Indigenous peoples can understand their
+healthcare in their own language, as we do in our 501(c)(3) institute, the
+[_Instituto Dourados_](https://institutodourados.org)
+- high-fidelity, multilingual, and self-improving technical documentation and
+translation tools
 
 
 ### Official packages and alternatives
@@ -37,17 +49,14 @@ At our current development-stage v0.1 we prefer ARM compatibility over official
 that is because we stopped at what worked for ARM and moved on.
 
 
+## How `ahelper` Helps
 
-## The Types of Help That `ahelper` Provides
+1. Install Arch Linux packages on either ARM or x86 platforms.
+2. Configure system settings, including fetching, building, and installing
+packages if necessary. This includes things like `ahelper memory` to be walked
+through memory configuration and best practices in Arch Linux.
 
-1. Install groups of related packages reliably whether ARM or x86. For
-example in the base spec's [`rstats` block](base_), a `repo` is given for the R language
-itself because the official sources have `r` for ARM and x86. However, no repo
-exists in the official sources, including the user-driven AUR, for R essentials
-RStudio and Quarto, both are Posit products. `ahelper` automates installing all
-three on ARM and x86.
-2. Configure system settings, including fetching packages if necessary. This
-includes things like a `ahelper wifi`, a wrapper for connecting to wifi via
-`iwctl`, or `ahelper memory` to be walked through memory configuration and best
-practices in Arch Linux.
+
+## Support Our Work
+
 

@@ -1,0 +1,55 @@
+##
+# sources/MANIFEST.yml
+#
+# Manifest for documenting names (given as a unique id), dependencies, and
+# access routes for all sources that may be obtained either through pacman or
+# otherwise from source.
+#
+# All source listings have a `name` and either a `pacman` or `cmd` field must
+# be present to point ahelper either to the official Arch package available
+# via `pacman`, or to provide the shell command to access, build, and install
+# remote sources.
+#
+# Author: Matt Turner <matt@mat.phd>
+# Date 2 August 2026
+#
+
+
+###############################################################################
+## *** Operating System Plugins, Environments, Desktop and Other Helpers *** ##
+###############################################################################
+os:
+  - id: hyprland
+    pacman: hyprland
+    description: 'Hyprland is the tiling windows manager that provides the Sustainable Inference desktop environment.'
+    url: https://wiki.hypr.land
+  - id: ashell
+    cmd: 'git clone https://github.com/MalpenZibo/ashell.git && cd ashell && cargo build --release && sudo cp target/release/ashell /usr/local/bin/ashell'
+    description: 'Provides a top bar for a minimal desktop experience for tracking windows, date and time, WiFi, brightness, and other settings.'
+    url: https://github.com/MalpenZibo/ashell
+  - id: paru
+    depends: dev-base
+    cmd: 'git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si'
+    url: https://aur.archlinux.org/packages/paru
+
+
+#######################################################################
+## *** Quantitative Science and Developer Tools and Environments *** ##
+#######################################################################
+dev:
+  - id: dev-base
+    pacman:
+      - base-devel
+      - git
+      - cmake
+      - ninja
+      - wget
+      -
+  - id: rust
+    pacman: rustup
+  - id: rlang
+    pacman: r
+    url:
+      -  https://www.r-project.org/
+      -  https://www.r-project.org/
+

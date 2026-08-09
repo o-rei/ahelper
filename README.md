@@ -51,12 +51,36 @@ that is because we stopped at what worked for ARM and moved on.
 
 ## How `ahelper` Helps
 
-1. Install Arch Linux packages on either ARM or x86 platforms.
-2. Configure system settings, including fetching, building, and installing
-packages if necessary. This includes things like `ahelper memory` to be walked
-through memory configuration and best practices in Arch Linux.
+1. Install Arch Linux packages on either ARM or x86 platforms. Fetches, builds,
+and installs packages if necessary.
+2. System configuration. The memory helper invoked via `ahelper memory` walks
+the user through the critical task of inspecting and configuring memory usage to
+optimize resources.
+
 
 
 ## Support Our Work
+
+`ahelper` is made freely available as a product of our partnership with the
+[Generation of Participation in Democracy](https://gpd.network) (GPD), a 501(c)(3)
+public charity.
+
+One of our primary activities at the GPD is ensuring `ahelper` and other _Sustainable
+Inference_ software and hardware first serves Indigenous and other historically
+marginalized peoples.
+
+To support the continued development of `ahelper` and other Sustainable
+Inference tools, you can donate [to support the GPD's Flagship Institute, the
+_Instituto Dourados_, in their current sprint]() to partner with Indigenous
+students and youth to build efficiency-focused, grid-independent computing
+systems.
+
+In August 2026, GPD and Instituto Dourados founders [Matt
+Turner](https://mat.phd) and [Iza
+Rezende](https://institutodourados.org/en/team.html#dra.-izabela-mauricio-de-rezende)
+will travel to Dourados to lead a workshop to kickstart our partnership with
+Indigenous youth groups at the Dourados Indigenous Reservation in Dourados, Mato
+Grosso do Sul, Brazil.
+
 
 
